@@ -1,0 +1,35 @@
+Code Book
+=================
+Due the fact that the new data files are just transofmraion of the original data the untits and description of each variable corresponds exactly the same as the units and methodology, the diferences for the file runAnalysisMeanStandarDeviation is just the names of the values and that contains the Activity column and the subject column.
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+activityNumber: the number of the activity
+activityName: the descriptive name of the activity
+subject: the number that correspond the subject of the observation
+timeBodyacccelerator(mean)|(standardeviation)XYZ
+timeGravityacccelerator(mean)|(standardeviation)XYZ
+timeBodyccceleratorJerk(mean)|(standardeviation)XYZ
+timeBodygyroscope(mean)|(standardeviation)XYZ
+timeBodygyroscopeJerk(mean)|(standardeviation)XYZ
+timeBodyccceleratormagnitude(mean)|(standardeviation)
+timeGravityccceleratormagnitude(mean)|(standardeviation)
+timeBodyccceleratorJerkmagnitude(mean)|(standardeviation)
+timeBodygyroscopemagnitude(mean)|(standardeviation)
+timeBodygyroscopeJerkmagnitude(mean)|(standardeviation)
+fouriertransformBodycccelerator(mean)|(standardeviation)XYZ
+fouriertransformBodyccceleratorJerk(mean)|(standardeviation)XYZ
+fouriertransformBodygyroscope(mean)|(standardeviation)XYZ
+fouriertransformBodyccceleratormagnitude(mean)|(standardeviation)
+fouriertransformBodyccceleratorJerkmagnitude(mean)|(standardeviation)
+fouriertransformBodygyroscopemagnitude(mean)|(standardeviation)
+fouriertransformBodygyroscopeJerkmagnitude(mean)|(standardeviation)
+
+The second data file runAnalysisMeanByActivutyandSubject contain exactly the same variables but the meaning of the columns is the mean of the variables in the previous file, grouped by activityName and sibject. Therefore, the units are the same and the meaning is the mean of the means of the variables or the mean of the standar deviation.
